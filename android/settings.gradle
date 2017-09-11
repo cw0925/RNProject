@@ -1,0 +1,9 @@
+rootProject.name = 'JianZhiYun'
+include ':react-native-scanidcard'
+project(':react-native-scanidcard').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-scanidcard/android/app')
+
+include ':app'
+include ':react-native-barcodescanner'
+project(':react-native-barcodescanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-barcodescanner/android')
+include ':react-native-camera'
+project(':react-native-camera').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera/android')
